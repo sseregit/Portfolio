@@ -1,0 +1,13 @@
+{% extends 'partial/base.html'%}
+
+{% block content %}
+<div class="container">
+    {{target_user.username}}
+    {{target_user.first_name}}
+    {{target_user.last_name}}
+    {{target_user.email}}
+    {{target_user.is_staff}}
+    {{target_user.is_active}}
+    {{target_user.date_joined}}
+</div>
+{% endblock %}
